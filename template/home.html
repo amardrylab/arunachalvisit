@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+<H1>
+	<p>Recall your visit to Arunachal</p>
+	<p>Date: 7th May to 12th May 2019</p>
+	<p>Visitors: Nanigopal Garai</p>
+	<p>          Monika Garai</p>
+	<p>          Snigdha Garai</p>
+	<p>          Gourab Kanti Das</p>
+	<p>          Nibedita Das</p>
+	<p>          Nilagriba Das</p>
+	<p>          Disha Das</p>
+</H1>
+<a href="{% url 'hotel_images' %}" class="btn btn-info btn-block btn-lg" role="button">Image View</a>
+<a href="{% url 'image_upload' %}" class="btn btn-info btn-block btn-lg" rule="button">Add Image</a>
+<a href="{% url 'video' %}" class="btn btn-info btn-block btn-lg" rule="button">Video</a>
+</div>
+{% endblock %}
